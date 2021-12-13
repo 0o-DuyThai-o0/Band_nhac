@@ -1,0 +1,349 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width : 280px) {
+    
+}
+
+.clear{
+    clear: both;
+}
+
+#main {
+
+}
+
+#header{
+    background-color: #000;
+    z-index: 1; 
+    width: 100%;
+    height: 46px ;
+    position: fixed;
+    top : 0px;
+    left: 0;
+    right: 0;
+}
+
+#menu {
+    display: inline-block;
+}
+
+#menu .untra_menu li {
+    list-style-type: none;
+
+}
+
+.untra_menu>li{
+    display: inline-block;
+    line-height: 46px;
+    padding: 0 24px;
+}
+
+.untra_menu li:hover {
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+    opacity: 1.5;
+}
+
+.untra_menu li:hover a {
+    color: #000;
+    cursor: pointer;
+}
+
+.untra_menu li:hover .sub_menu {
+    display: block;
+    cursor: pointer;
+}
+
+.untra_menu>li>a {
+    color: #fff;
+}
+
+.untra_menu li a {
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.untra_menu {
+    position: relative;
+}
+
+.untra_menu .sub_menu {
+    display: none; 
+    position: absolute;
+    background-color: #fff;
+    left: 365.5px;
+    box-shadow: 0 0 10px rgba(122, 5, 255, 0.3);
+}
+
+#menu .sub_menu li { 
+    line-height: 36px;
+    padding: 0 12px;
+    
+}
+
+#menu .sub_menu li a {
+    color: #000;
+}
+
+#menu .sub_menu li:hover {
+    background-color: gray;
+}
+
+#menu .sub_menu li:hover a{
+    color: #fff;
+}
+
+.untra_menu.icon-down {
+    color: #fff;
+    font-size: 14px;
+}
+
+#header .search {
+    float: right;
+    line-height: 46px;
+    padding: 0 16px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.search:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+#slider {  
+    width: 100%; 
+    position: relative;
+    padding-top: 50%;
+    margin-top: 46px;
+    background: url('/image/chicago.jpg') top center / cover no-repeat ;
+}
+
+.mo_ta {
+    position: absolute;
+    left: 35%;
+    right: 35%;
+    text-align: center;
+    bottom: 47px;
+    color: #fff;
+}
+
+.mo_ta .dia_diem {
+    font-weight: 500;
+}
+
+.mo_ta .thong_tin {
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#content {
+    width: 100%;
+}
+
+#about {
+    padding: 64px 0;
+    margin-left: auto;
+    margin-right: auto;
+    width : 60%;
+}
+
+#content .name{
+    letter-spacing: 4px;
+    font-size: 30px;
+    font-weight: 400;
+    margin: 10px 0;
+    text-align: center;
+}
+
+#content .cham_ngon {
+    text-align: center;
+    font-style: italic;
+    font-size: 15px;
+    margin-top: 25px;
+    opacity: 0.6;
+}
+
+#content .thong_tin{
+    font-size: 15px;
+    margin-top: 15px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+#content .member{
+    margin-top: 48px;
+    margin-bottom: 48px;
+    height: 100px;
+}
+
+#about .member1{
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+.member2{
+    width: 60%;
+    margin-top: 15px;
+}
+
+.member1 p{
+    text-align: center;
+    font-size: 15px;
+}
+
+#content #tour{
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    padding: 64px 0;
+}
+
+#tour #check{
+    margin: 40px 20%;
+    background-color: #000;
+}
+
+#tour .setup_tour{
+    background-color: #fff;
+    color: #000;
+    list-style: none;
+    line-height: 40px; 
+    border-color: #000;
+}
+
+.setup_tour li{
+    margin-left: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.setup_tour .sold_out{
+    background-color: red;
+    color: #fff;
+    margin-left: 10px;
+    padding: 4px;
+}
+
+.setup_tour .quality{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    line-height: 24px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 8px;
+}
+
+.location{
+    margin-top : 32px;
+    display: flex;
+}
+
+.address{
+    background-color: #fff;
+    color: #000;
+    width: 33.3333%;
+    border-right: 8px solid #000;
+    border-left: 8px solid #000;
+}
+    
+#image1{
+    width: 100%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.dat_ve{
+    margin: 0 10px 20px 10px;
+}
+
+.time_location{
+    opacity: 0.6;
+    margin: 15px 0;
+}
+
+.about_location{
+    margin-bottom: 20px;
+}
+
+#button{
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+}
+
+#tour .clear{
+    
+}
+
+#contact {
+    padding: 64px 0;
+    width: 100%;
+}
+
+.contact_about{
+    margin-left: 20%;
+    margin-top: 50px;
+}
+
+.icon_email,
+.icon_phone,
+.icon_location{
+    margin-right: 10px;
+}
+
+.contact_send{
+
+}
+
+#map{
+    background: url('/image/map.jpg') top center / cover no-repeat;
+    width: 100%;
+    height: 600px;
+    padding: 64px 0;
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+#icon a{
+    font-size: 24px;
+    color: rgba(0, 0, 0, 0.4);
+    text-decoration: none;
+}
+
+#footer .com a:hover,
+#icon a:hover {
+    opacity: 0.6;
+}
+
+#footer .com{
+    margin-top: 15px;
+}
+
+#footer .com a {
+    text-decoration: underline;
+}
